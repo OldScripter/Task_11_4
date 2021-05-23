@@ -14,7 +14,7 @@ std::string getLeftPart(std::string number)
         }
         else if (i == 0 && number[i] == '-') sign = '-';
         else if (i == 0 && number[i] == '+') sign = '+';
-        else if (number[i] == '0' & !firstNonZeroIsFound) continue;
+        else if (number[i] == '0' && !firstNonZeroIsFound) continue;
         else if (number[i] >= '0' && number[i] <= '9')
         {
             leftPart += number[i];
